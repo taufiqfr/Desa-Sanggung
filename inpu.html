@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="shortcut icon" href="img/kabupaten.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+<header>
+    <div class="atas">
+      <div class="lambang">
+        <img class="kabupaten" src="img/kabupaten.png" alt="">
+      </div>
+      <div class="ukuran-huruf">
+        <p>KELURAHAN</p>
+        <p class="Sanggung">SANGGUNG</p>
+      </div>
+    </div>
+    <div class="navbar">
+      <a class="tombol-navbar" href="1.html">Beranda</a></td>
+      <div class="dropdown">
+        <button class="dropbtn">Profil</button>
+        <div class="dropdown-content">
+          <a href="struktur pemerintahan.html">Struktur pemerintahan</a>
+          <a href="visimisi.html">Visi&Misi</a>
+          <a href="sdm.html">SDM</a>
+          <a href="ss.html">Sarana Prasarana</a>
+          <a href="tugas&fungsi.html">Tugas Dan Fungsi</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="informasi.html">Informasi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Berita</button>
+        <div class="dropdown-content">
+          <a href="beritaA.html">Berita Kelurahan </a>
+          <a href="beritaB.html">Berita Kecamatan</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Layanan</button>
+        <div class="dropdown-content">
+          <a href="Pembuatan AKTE.html">Pembuatan AKTE</a>
+          <a href="Pembuatan KK.html">Pembuatan KK</a>
+          <a href="Pembuatan KTP.html">Pembuatan KTP</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="#">Pendaftaran</a>
+      <a class="tombol-navbar" href="hubungikami.html">Hubungi kami</a>
+    </div>
+  </header>
+  <body>
+    <table>
+        <tr>
+          <th>Nama</th>
+          <th>Tempat Lahir</th>
+          <th>Pekerjaan</th>
+          <th>Provinsi</th>
+          <th>Kabupaten</th>
+          <th>Kecamatan</th>
+          <th>Kelurahan</th>
+          <th>Rt/rw</th>
+          <th>Alamat</th>
+          <th>Nokk</th>
+        </tr>
+        <tr>
+          <td id="namaData"></td>
+          <td id="tempatLahirData"></td>
+          <td id="pekerjaanData"></td>
+          <td id="provinsiData"></td>
+          <td id="kabupatenData"></td>
+          <td id="kecamatanData"></td>
+          <td id="kelurahanData"></td>
+          <td id="rtRwData"></td>
+          <td id="alamatData"></td>
+          <td id="nokkData"></td>
+        </tr>
+      </table>
+    
+      <script>
+        function displayData() {
+          // Mendapatkan nilai dari input
+          document.getElementById("ckck").style.display = "block";
+          document.getElementById("kckc").style.display = "none";
+          var foto = document.getElementById("foto").value;
+          var nama = document.getElementById("nama").value;
+          var tempatLahir = document.getElementById("tempatLahir").value;
+          var pekerjaan = document.getElementById("pekerjaan").value;
+          var provinsi = document.getElementById("provinsi").value;
+          var kabupaten = document.getElementById("kabupaten").value;
+          var kecamatan = document.getElementById("kecamatan").value;
+          var kelurahan = document.getElementById("kelurahan").value;
+          var rtRw = document.getElementById("rtRw").value;
+          var alamat = document.getElementById("alamat").value;
+          var nokk = document.getElementById("nokk").value;
+    
+          // Menampilkan hasil di dalam tabel
+          document.getElementById("namaData").textContent = nama;
+          document.getElementById("tempatLahirData").textContent = tempatLahir;
+          document.getElementById("pekerjaanData").textContent = pekerjaan;
+          document.getElementById("provinsiData").textContent = provinsi;
+          document.getElementById("kabupatenData").textContent = kabupaten;
+          document.getElementById("kecamatanData").textContent = kecamatan;
+          document.getElementById("kelurahanData").textContent = kelurahan;
+          document.getElementById("rtRwData").textContent = rtRw;
+          document.getElementById("alamatData").textContent = alamat;
+          document.getElementById("nokkData").textContent = nokk;
+        }
+      </script>
+    </body>
+    </html>

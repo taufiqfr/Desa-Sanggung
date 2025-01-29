@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh Form</title>
+    <script>
+        function displayData() {
+            // Mendapatkan nilai dari input
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var email = document.getElementById("email").value;
+
+            // Menampilkan hasil di dalam elemen dengan id "result"
+            document.getElementById("result").innerHTML = "Nama: " + name + "<br>Umur: " + age + "<br>Email: " + email;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Contoh Form</h1>
+    <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="button" value="Submit" onclick="displayData()">
+    </form>
+
+    <h2>Hasil Input:</h2>
+    <div id="result"></div>
+</body>
+
+</html>

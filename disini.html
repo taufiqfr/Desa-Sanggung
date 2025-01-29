@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disini</title>
+  <link rel="shortcut icon" href="img/kabupaten.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="js.css">
+
+
+</head>
+<style>
+  #cc {
+    height: 30px;
+    width: 600px;
+  }
+
+  #ttd {
+    height: 30px;
+    margin-top: 2px;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+  }
+
+  .tombol-submit {
+    background-color: gray;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+
+  #result {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 70px;
+    width: 80%;
+    margin-left: 50px;
+    margin-right: 70px;
+    text-indent: 10em;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="atas">
+      <div class="lambang">
+        <img class="kabupaten" src="img/kabupaten.png" alt="">
+      </div>
+      <div class="ukuran-huruf">
+        <p>KELURAHAN</p>
+        <p class="Sanggung">SANGGUNG</p>
+      </div>
+    </div>
+    <div class="navbar">
+      <a class="tombol-navbar" href="1.html">Beranda</a></td>
+      <div class="dropdown">
+        <button class="dropbtn">Profil</button>
+        <div class="dropdown-content">
+          <a href="struktur pemerintahan.html">Struktur pemerintahan</a>
+          <a href="visimisi.html">Visi&Misi</a>
+          <a href="sdm.html">SDM</a>
+          <a href="ss.html">Sarana Prasarana</a>
+          <a href="tugas&fungsi.html">Tugas Dan Fungsi</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="informasi.html">Informasi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Berita</button>
+        <div class="dropdown-content">
+          <a href="beritaA.html">Berita Kelurahan </a>
+          <a href="beritaB.html">Berita Kecamatan</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Layanan</button>
+        <div class="dropdown-content">
+          <a href="Pembuatan AKTE.html">Pembuatan AKTE</a>
+          <a href="Pembuatan KK.html">Pembuatan KK</a>
+          <a href="Pembuatan KTP.html">Pembuatan KTP</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="#">Pendaftaran</a>
+      <a class="tombol-navbar" href="hubungikami.html">Hubungi kami</a>
+    </div>
+  </header>
+  <!-- <table align="center" border="1px"  cellspacing="4" height="350" color="grey" style="margin-top: 50px;">
+            <form>
+                <tr>
+                    <td>
+                    </tr>
+                    <th style="height:30px;" colspan="2" bgcolor="silver" fontcolor="black" size="5">
+                        FORM AKTA KELAHIRAN</th>
+                    </tr>
+                    <tr>
+                        <td>Nama lengkap</td>
+                        <td>
+                            <input size="30" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>anak ke</td>
+                        <td>
+                            <input size="30" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>tanggal lahir</td>
+                        <td><input type="text" placeholder="Tempat lahir">
+                        <input type="date" placeholder="Tanggal lahir"></td>
+                    </tr>
+                    <tr>
+                        <td>jenis kelamin</td>s
+                        <td><input name="Pekerjaan" type="text" size="30" placeholder="jenis kelamin"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama bapak</td>
+                        <td><input type="email" name="email" placeholder="nama bapak"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama ibu</td>
+                        <td><input type="email" name="email" placeholder="nama ibu"></td>
+                    </tr>
+                    <tr>
+                      <td>Upload surat kelahiran</td>
+                      <td><input type="file" name="file"></td>
+                    </tr>
+    
+                    <tr>
+                        <td></td>
+                        <a href="#"><td><input type="submit" value="KIRIM" onclick="klik()" ></a>
+                        <button><a href="disini.html">Cancel</a></button>
+                    </tr>
+            </form>
+        </table> -->
+  <div class="div-pengisiandatta" id="kckc">
+    <h1 style="text-align: center;">Form Pembuatan KTP</h1>
+    <form action="/action_page.php">
+      <label for="fname">Nama Lengkap</label>
+      <br>
+      <input type="text" id="Namalengkap" name="firstname" placeholder="Nama anda..">
+      <br>
+      <br>
+      <label for="lname">TTL</label>
+      <br>
+      <input type="text" id="tempatlahir" placeholder="Tempat lahir">
+      <input type="date" id="cc" name="lastname">
+      <br>
+      <br>
+      <label for="lname">Pekerjaan</label>
+      <br>
+      <input type="text" id="pekerjaan" name="lastname" placeholder="Pekerjaan..">
+      <br>
+      <br>
+      <label for="lname">Status</label>
+      <br>
+      <input type="radio" name="fav_language" value="HTML">
+      <label for="html">Menikah</label>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Belum menikah</label>
+      <br>
+      <br>
+      <label for="agama">Agama</label>
+      <select>
+        <option value="islam">Islam</option>
+        <option value="hindu">Hindu</option>
+        <option value="budha">Budha</option>
+        <option value="kristen">Kristen</option>
+        <option value="katolik">Katolik</option>
+        <option value="konghuchu">Konghuchu</option>
+      </select>
+      <br>
+      <br>
+      <label for="lname">Jenis Kelamin</label>
+      <input type="radio" name="fav_language" value="HTML">
+      <label for="html">Laki laki</label>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Perempuan</label>
+      <br>
+      <br>
+      <label for="lname">Provinsi</label>
+      <br>
+      <input type="text" id="provinsi" name="lastname" placeholder="Provinsi..">
+      <br>
+      <br>
+      <label for="lname">Kabupaten</label>
+      <br>
+      <input type="text" id="kabupaten" name="lastname" placeholder="Kabupaten..">
+      <br>
+      <br>
+      <label for="lname">Kecamatan</label>
+      <br>
+      <input type="text" id="kecamatan" name="lastname" placeholder="kecamatan..">
+      <br>
+      <br>
+      <label for="lname">Kelurahan</label>
+      <br>
+      <input type="text" id="kelurahan" name="lastname" placeholder="Kelurahan..">
+      <br>
+      <br>
+      <label for="lname">RT/RW</label>
+      <br>
+      <input type="text" id="rt" name="lastname" placeholder="RT/RW..">
+      <br>
+      <br>
+      <label for="lname">Alamat lengkap</label>
+      <br>
+      <input type="text" id="alamat" name="lastname" placeholder="Alamat..">
+      <br>
+      <br>
+      <label for="lname">No KK</label>
+      <br>
+      <input type="text" id="nokk" name="lastname" placeholder="No KK..">
+      <br>
+      <br>
+      <label for="lname">Foto</label>
+      <input type="file" id="foto" name="lastname">
+      <br>
+      <br>
+      <label for="subject">Ttd</label>
+      <br>
+      <input type="file" id="lname" name="lastname">
+      <br>
+      <br>
+      <label for="subject">Sidik jari</label>
+      <br>
+      <input type="file" id="lname" name="lastname">
+      <br>
+      <br>
+      <input type="button" value="Submit" onclick="displayData()">
+    </form>
+  </div>
+  <div style="display: none;" id="ckck">
+    <h2 style="text-align: center;">Hasil Input:</h2>
+    <div id="result"></div>
+  </div>
+  <!-- footer -->
+  <footer class="footer-1">
+    <div class="container">
+      <div class="row">
+        <div class="footer-logo">
+          <img class="img-footer" src="img/kabupaten.png" />
+        </div>
+        <div class="div-footer1">
+          <h4 class="h4-footer1">
+            About Us
+          </h4>
+          <p class="p-footer1">
+            Web ini Untuk mepermudah masyarakat untuk mengetahui informasi dimana saja dan kapan saja
+          </p>
+        </div>
+        <div class="div-footer2">
+          <h4 class="h4-footer2">
+            Kantor Pusat
+          </h4>
+          <p class="p-footer1">
+            sanggung,gatak<br />
+            sukoharjo<br />
+            Phone: (555) 555-5555<br />
+            Email: desasanggung@gmail.com
+          </p>
+        </div>
+        <div class="div-footer3">
+          <h4 class="h4-footer3">
+            Follow Us
+          </h4>
+          <ul class="social-icons">
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://youtu.be/TPCGvrdaHmw"
+                style="background-image: url(img/1.png);"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://twitter.com/FadliRa74271075"
+                style="background-image: url(img/2.png);"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://www.instagram.com/rmd.nf"
+                style="background-image: url(img/3.png);"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://www.facebook.com/taufiq.fadhlyr"
+                style="background-image: url(img/4.png);"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p style="text-align: center">Pemrograman Web</p>
+    </div>
+        
+  </footer>
+  <script>
+    function displayData() {
+      // Mendapatkan nilai dari input
+      document.getElementById("ckck").style.display = "block";
+      document.getElementById("kckc").style.display = "none";
+      var foto = document.getElementById("foto").value;
+      var Namalengkap = document.getElementById("Namalengkap").value;
+      var tempatlahir = document.getElementById("tempatlahir").value;
+      var pekerjaan = document.getElementById("pekerjaan").value;
+      var provinsi = document.getElementById("provinsi").value;
+      var kabupaten = document.getElementById("kabupaten").value;
+      var kecamatan = document.getElementById("kecamatan").value;
+      var kelurahan = document.getElementById("kelurahan").value;
+      var rt = document.getElementById("rt").value;
+      var alamat = document.getElementById("alamat").value;
+      var nokk = document.getElementById("nokk").value;
+
+      // Menampilkan hasil di dalam elemen dengan id "result"
+      document.getElementById("result").innerHTML = foto + "<br>Nama : " +
+        Namalengkap + "<br/><br/>Tempat lahir: " +
+        tempatlahir + "<br ><br/>Pekerjaan: " +
+        pekerjaan + "<br><br/>Provinsi: " +
+        provinsi + "<br><br/>Kabupaten: " +
+        kabupaten + "<br><br/>Kecamatan: " +
+        kecamatan + "<br><br/>Kelurahan: " +
+        kelurahan + "<br><br/>Rt/rw                             : " +
+        rt + "<br><br/>Alamat                              : " +
+        alamat + "<br><br/>Nokk                            : " +
+        nokk;
+    }
+  </script>
+
+</body>
+
+</html>

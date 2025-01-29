@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start</title>
+  <link rel="shortcut icon" href="img/kabupaten.png" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .div-pengisiandatta {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 70px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .h3-pengisianndata {
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="atas">
+      <div class="lambang">
+        <img class="kabupaten" src="img/kabupaten.png" alt="">
+      </div>
+      <div class="ukuran-huruf">
+        <p>KELURAHAN</p>
+        <p class="Sanggung">SANGGUNG</p>
+      </div>
+    </div>
+    <div class="navbar">
+      <a class="tombol-navbar" href="1.html">Beranda</a></td>
+      <div class="dropdown">
+        <button class="dropbtn">Profil</button>
+        <div class="dropdown-content">
+          <a href="struktur pemerintahan.html">Struktur pemerintahan</a>
+          <a href="visimisi.html">Visi&Misi</a>
+          <a href="sdm.html">SDM</a>
+          <a href="ss.html">Sarana Prasarana</a>
+          <a href="tugas&fungsi.html">Tugas Dan Fungsi</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="informasi.html">Informasi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Berita</button>
+        <div class="dropdown-content">
+          <a href="beritaA.html">Berita A</a>
+          <a href="beritaB.html">Berita B</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Layanan</button>
+        <div class="dropdown-content">
+          <a href="Pembuatan AKTE.html">Pembuatan AKTE</a>
+          <a href="Pembuatan KK.html">Pembuatan KK</a>
+          <a href="Pembuatan KTP.html">Pembuatan KTP</a>
+        </div>
+      </div>
+      <a class="tombol-navbar" href="#">Pendaftaran</a>
+      <a class="tombol-navbar" href="hubungikami.html">Hubungi kami</a>
+    </div>
+  </header>
+  <!-- konten -->
+
+  <h3 class="h3-pengisianndata">PROSES PENGISISAN DATA</h3>
+  <div id="isidata" class="div-pengisiandatta">
+    <form action="/action_page.php">
+      <label for="fname">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama anda..">
+
+      <label for="lname">Alamat</label>
+      <input type="text" id="alamat" name="lastname" placeholder="Alamat..">
+
+      <label for="lname">No.handphone</label>
+      <input type="text" id="no" name="lastname" placeholder="NO.handphone..">
+
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="lastname" placeholder="Email..">
+
+      <label for="lname">Tanggal Postingan</label>
+      <input type="date" id="lname" name="lastname" placeholder="Tanggal Postingan">
+      <br>
+      <label for="subject">Pesan</label>
+      <textarea id="pesan" name="subject" placeholder="Masukkan pesan Anda.." style="height:200px"></textarea>
+
+      <input type="button" value="Submit" onclick="kkk()">
+    </form>
+  </div>
+  <div id="hhh"></div>
+  <div id="result"></div>
+
+  <!-- footer -->
+  <footer class="footer-1">
+    <div class="container">
+      <div class="row">
+        <div class="footer-logo">
+          <img class="img-footer" src="img/kabupaten.png" />
+        </div>
+        <div class="div-footer1">
+          <h4 class="h4-footer1">
+            About Us
+          </h4>
+          <p class="p-footer1">
+            Web ini Untuk mepermudah masyarakat untuk mengetahui informasi dimana saja dan kapan saja
+          </p>
+        </div>
+        <div class="div-footer2">
+          <h4 class="h4-footer2">
+            Kantor Pusat
+          </h4>
+          <p class="p-footer1">
+            sanggung,gatak<br />
+            sukoharjo<br />
+            Phone: (555) 555-5555<br />
+            Email: desasanggung@gmail.com
+          </p>
+        </div>
+        <div class="div-footer3">
+          <h4 class="h4-footer3">
+            Follow Us
+          </h4>
+          <ul class="social-icons">
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://youtu.be/TPCGvrdaHmw"
+                style="background-image: url(img/1.png);"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://twitter.com/FadliRa74271075"
+                style="background-image: url(img/2.png);"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://www.instagram.com/rmd.nf"
+                style="background-image: url(img/3.png);"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="li-footer">
+              <a class="icon-sosial-media" href="https://www.facebook.com/taufiq.fadhlyr"
+                style="background-image: url(img/4.png);"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p style="text-align: center">Pemrograman Web</p>
+    </div>
+  </footer>
+  <script>
+    function kkk() {
+      alert("pesan anda terkirim!");
+      document.getElementById("hhh").style.display="block"
+      document.getElementById("isidata").style.display="none"
+      var nama = document.getElementById("nama").value;
+      var alamat = document.getElementById("alamat").value;
+      var no = document.getElementById("no").value;
+      var email = document.getElementById("email").value;
+      var lname = document.getElementById("lname").value;
+      var pesan = document.getElementById("pesan").value; 
+
+      document.getElementById("result").innerHTML = "nama : " + nama + "<br>alamat : " + alamat +
+      "<br>No. Handpone : " + no + "<br>email : " + email + "<br>Tanggal Postingan : " + lname +
+      "<br>pesan : " + pesan;
+    }
+
+  </script>
+</body>
+
+</html
